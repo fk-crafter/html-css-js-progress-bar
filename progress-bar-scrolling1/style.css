@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+  color: white;
+  padding: 64px;
+	font-family: Mulish;
+}
+
+.progress__wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+  z-index: 100;
+	width: 100%;
+	height: 10px;
+	background-color: #2c2c2c;
+}
+
+.progress__bar {
+	display: block;
+	width: 0;
+	height: inherit;
+	background: linear-gradient(
+		90deg, rgb(255, 191, 0) 0%,
+        rgb(255, 191, 0) 16.15%, 
+		rgb(255, 191, 0) 33.85%, 
+		rgb(255, 191, 0) 50.52%,
+	    rgb(255, 191, 0) 66.15%, 
+		rgb(255, 191, 0) 81.25%, 
+		rgb(255, 191, 0) 100%
+	);
+}
+
+.article__content {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.article__content p {
+	line-height: 1.5;
+}
+
+.article__content h1 {
+	font-weight: 700;
+    margin: 0;
+    font-size: 38px;
+}
